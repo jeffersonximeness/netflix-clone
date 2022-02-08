@@ -14,7 +14,10 @@ export default () => {
 
   useEffect(() => {
     const loadAll = async () => {
-      let list = await Tmdb.getHomeList().then(response => setMovieList(response))
+      let list = await Tmdb.getHomeList()
+                  .then(
+                    response => setTimeout(() => setMovieList(response), 1950)
+                  )
     
       let originals = Tmdb.getHomeList()
         .then(item => item.filter(movies => movies.slug === 'originals'))
@@ -64,10 +67,15 @@ export default () => {
       </section>
 
       <footer>
-        Feito por Jefferson :) <br/>
         Direitos de imagem pertencentes a Netflix <br/>
         Dados obtidos via API do site themoviedb.org
       </footer>
+      
+      { movieList.length <= 0 &&  
+        <div className='loading'>
+          <img src="https://c.tenor.com/Rfyx9OkRI38AAAAC/netflix-netflix-startup.gif" alt="carregando" />
+        </div>
+      }
     </div>
   )
 }
