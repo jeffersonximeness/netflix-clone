@@ -8,9 +8,14 @@ body {
     background-color: #111;
     color: #fff;
     margin: 0;
-    font-family: 'Robot', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .lists {
     margin-top: -270px;
+}
+
+footer {
+    margin: 50px 0;
+    text-align: center;
 }
