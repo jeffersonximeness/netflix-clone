@@ -29,7 +29,9 @@ $ npm start
 ```
 
 ## 💡 Observação
-<p>Para que o projeto rode, é preciso criar uma API KEY no site da <a href="https://www.themoviedb.org/?language=pt-BR">TMDB</a> e colocá-la na variável api_key no arquivo env.js</p>
-
+<div>
+    <p>As informações foram coletadas pela API do <a href="https://www.themoviedb.org/?language=pt-BR">TMDB</a>.</p>
+    <p>Para que o projeto rode, é preciso criar uma API KEY no site da <a href="https://www.themoviedb.org/?language=pt-BR">TMDB</a> e colocá-la na variável api_key no arquivo env.js</p>
+</div>
 <br>
 <p>A aplicação irá abrir localmente em <strong>http://localhost:3000</strong></p>
